@@ -1,5 +1,4 @@
-{% set version = '0.5-23.1097' %}
-
+{% set version = '0.6-1' %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,11 +9,12 @@ package:
 source:
   fn: lavaan_{{ version }}.tar.gz
   url:
-    - https://cran.r-project.org/src/contrib/lavaan_{{ version }}.tar.gz
-    - https://cran.r-project.org/src/contrib/Archive/lavaan/lavaan_{{ version }}.tar.gz
-  sha256: 9aa7c3278f08f46b91fb0357dbdb9539936ba54e11d270d7febce0049efc9d87
+    - {{ cran_mirror }}/src/contrib/lavaan_{{ version }}.tar.gz
+    - {{ cran_mirror }}/src/contrib/Archive/lavaan/lavaan_{{ version }}.tar.gz
+  sha256: 229277d0c78bdbd252a6b016ad6aa4621e6b4dd0d1acc3b201cbf5128da9154c
 
 build:
+  merge_build_host: True  # [win]
   number: 0
   skip: true  # [win32]
   rpaths:
@@ -23,24 +23,22 @@ build:
 
 requirements:
   build:
+  host:
     - r-base
     - r-mass
     - r-mnormt
     - r-numderiv
     - r-pbivnorm
-    - r-quadprog
-
   run:
     - r-base
     - r-mass
     - r-mnormt
     - r-numderiv
     - r-pbivnorm
-    - r-quadprog
 
 test:
   commands:
-    - $R -e "library('lavaan')"  # [not win]
+    - $R -e "library('lavaan')"           # [not win]
     - "\"%R%\" -e \"library('lavaan')\""  # [win]
 
 about:
