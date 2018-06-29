@@ -14,14 +14,16 @@ Summary: Fit a variety of latent variable models, including confirmatory factor 
 Current build status
 ====================
 
-Linux: [![Circle CI](https://circleci.com/gh/conda-forge/r-lavaan-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/r-lavaan-feedstock)
-OSX: [![TravisCI](https://travis-ci.org/conda-forge/r-lavaan-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/r-lavaan-feedstock)
-Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/conda-forge/r-lavaan-feedstock?svg=True)](https://ci.appveyor.com/project/conda-forge/r-lavaan-feedstock/branch/master)
+[![Linux](https://img.shields.io/circleci/project/github/conda-forge/r-lavaan-feedstock/master.svg?label=Linux)](https://circleci.com/gh/conda-forge/r-lavaan-feedstock)
+[![OSX](https://img.shields.io/travis/conda-forge/r-lavaan-feedstock/master.svg?label=macOS)](https://travis-ci.org/conda-forge/r-lavaan-feedstock)
+[![Windows](https://img.shields.io/appveyor/ci/conda-forge/r-lavaan-feedstock/master.svg?label=Windows)](https://ci.appveyor.com/project/conda-forge/r-lavaan-feedstock/branch/master)
 
 Current release info
 ====================
-Version: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/r-lavaan/badges/version.svg)](https://anaconda.org/conda-forge/r-lavaan)
-Downloads: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/r-lavaan/badges/downloads.svg)](https://anaconda.org/conda-forge/r-lavaan)
+
+| Name | Downloads | Version | Platforms |
+| --- | --- | --- | --- |
+| [![Conda Recipe](https://img.shields.io/badge/recipe-r--lavaan-green.svg)](https://anaconda.org/conda-forge/r-lavaan) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/r-lavaan.svg)](https://anaconda.org/conda-forge/r-lavaan) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/r-lavaan.svg)](https://anaconda.org/conda-forge/r-lavaan) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/r-lavaan.svg)](https://anaconda.org/conda-forge/r-lavaan) |
 
 Installing r-lavaan
 ===================
