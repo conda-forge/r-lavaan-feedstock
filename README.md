@@ -3,7 +3,7 @@ About r-lavaan
 
 Home: http://lavaan.org
 
-Package license: GPL (>= 2)
+Package license: GPL-2
 
 Feedstock license: BSD 3-Clause
 
