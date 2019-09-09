@@ -1,4 +1,4 @@
-{% set version = '0.6-4' %}
+{% set version = '0.6-5' %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,11 +10,11 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/lavaan_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/lavaan/lavaan_{{ version }}.tar.gz
-  sha256: 8f4c760fedc43dd0d36c27ed3bd896133108b51ef92caf0586b90c5d6fd7c0fd
+  sha256: feeb6e1b419aa1d54fd5af1d67260b5d13ff251c19de8136a4df565305d47b12
 
 build:
   merge_build_host: True  # [win]
-  number: 1
+  number: 0
   noarch: generic
   rpaths:
     - lib/R/lib/
@@ -43,11 +43,12 @@ test:
 
 about:
   home: http://lavaan.org
-  license: GPL (>= 2)
+  license: GPL-2
   summary: Fit a variety of latent variable models, including confirmatory factor analysis, structural
     equation modeling and latent growth curve models.
-  license_family: GPL3
-  license_file: '{{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-2'
+  license_family: GPL2
+  license_file:
+    - '{{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-2'
 
 extra:
   recipe-maintainers:
@@ -55,8 +56,8 @@ extra:
 
 # Package: lavaan
 # Title: Latent Variable Analysis
-# Version: 0.6-4
-# Authors@R: c(person(given   = "Yves", family = "Rosseel", role    = c("aut", "cre"), email   = "Yves.Rosseel@UGent.be", comment = c(ORCID = "0000-0002-4129-4477")), person(given = c("Terrence","D."), family = "Jorgensen", role = "aut", email = "TJorgensen314@gmail.com", comment = c(ORCID = "0000-0001-5111-6773")), person(given = "Daniel", family = "Oberski", role = "ctb", email = "daniel.oberski@gmail.com"), person(given = "Jarrett", family = "Byrnes",  role = "ctb", email = "byrnes@nceas.ucsb.edu"), person(given = "Leonard", family = "Vanbrabant", role = "ctb", email = "Leonard.Vanbrabant@ugent.be"), person(given = "Victoria", family = "Savalei", role = "ctb", email = "vsavalei@ubc.ca"), person(given = "Ed", family = "Merkle", role = "ctb", email = "merklee@missouri.edu"), person(given = "Michael", family = "Hallquist", role = "ctb", email = "michael.hallquist at gmail.com"), person(given = "Mijke", family = "Rhemtulla", role = "ctb", email = "mijke@ku.edu"), person(given = "Myrsini", family = "Katsikatsou", role = "ctb", email = "mirtok2@gmail.com"), person(given = "Mariska", family = "Barendse", role = "ctb", email = "m.t.barendse@rug.nl"), person(given = "Florian", family = "Scharf", role = "ctb", email = "florian.scharf@uni-leipzig.de") )
+# Version: 0.6-5
+# Authors@R: c(person(given   = "Yves", family = "Rosseel", role    = c("aut", "cre"), email   = "Yves.Rosseel@UGent.be", comment = c(ORCID = "0000-0002-4129-4477")), person(given = c("Terrence","D."), family = "Jorgensen", role = "aut", email = "TJorgensen314@gmail.com", comment = c(ORCID = "0000-0001-5111-6773")), person(given = "Daniel", family = "Oberski", role = "ctb", email = "daniel.oberski@gmail.com"), person(given = "Jarrett", family = "Byrnes",  role = "ctb", email = "byrnes@nceas.ucsb.edu"), person(given = "Leonard", family = "Vanbrabant", role = "ctb", email = "Leonard.Vanbrabant@ugent.be"), person(given = "Victoria", family = "Savalei", role = "ctb", email = "vsavalei@ubc.ca"), person(given = "Ed", family = "Merkle", role = "ctb", email = "merklee@missouri.edu"), person(given = "Michael", family = "Hallquist", role = "ctb", email = "michael.hallquist at gmail.com"), person(given = "Mijke", family = "Rhemtulla", role = "ctb", email = "mrhemtulla@ucdavis.edu"), person(given = "Myrsini", family = "Katsikatsou", role = "ctb", email = "mirtok2@gmail.com"), person(given = "Mariska", family = "Barendse", role = "ctb", email = "m.t.barendse@rug.nl"), person(given = "Florian", family = "Scharf", role = "ctb", email = "florian.scharf@uni-leipzig.de") )
 # Description: Fit a variety of latent variable models, including confirmatory factor analysis, structural equation modeling and latent growth curve models.
 # Depends: R(>= 3.4)
 # Imports: methods, stats4, stats, utils, graphics, MASS, mnormt, pbivnorm, numDeriv
@@ -65,8 +66,8 @@ extra:
 # ByteCompile: true
 # URL: http://lavaan.org
 # NeedsCompilation: no
-# Packaged: 2019-07-03 14:49:10 UTC; yves
+# Packaged: 2019-08-28 19:09:35 UTC; yves
 # Author: Yves Rosseel [aut, cre] (<https://orcid.org/0000-0002-4129-4477>), Terrence D. Jorgensen [aut] (<https://orcid.org/0000-0001-5111-6773>), Daniel Oberski [ctb], Jarrett Byrnes [ctb], Leonard Vanbrabant [ctb], Victoria Savalei [ctb], Ed Merkle [ctb], Michael Hallquist [ctb], Mijke Rhemtulla [ctb], Myrsini Katsikatsou [ctb], Mariska Barendse [ctb], Florian Scharf [ctb]
 # Maintainer: Yves Rosseel <Yves.Rosseel@UGent.be>
 # Repository: CRAN
-# Date/Publication: 2019-07-03 16:00:06 UTC
+# Date/Publication: 2019-08-28 21:40:05 UTC
