@@ -1,4 +1,4 @@
-{% set version = "0.6-6" %}
+{% set version = "0.6-7" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,7 +10,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/lavaan_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/lavaan/lavaan_{{ version }}.tar.gz
-  sha256: 3001a07f82636091c6c7c5f1d64ca8f880eee61cd2f4254c5736f629322adb69
+  sha256: b3b186559b157497fb78a11ec46e2b49045ba04879e3faf30a75c1c73317464f
 
 build:
   merge_build_host: true  # [win]
