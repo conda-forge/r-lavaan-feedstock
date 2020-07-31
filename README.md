@@ -5,7 +5,7 @@ Home: http://lavaan.org
 
 Package license: GPL-2
 
-Feedstock license: BSD 3-Clause
+Feedstock license: BSD-3-Clause
 
 Summary: Fit a variety of latent variable models, including confirmatory factor analysis, structural equation modeling and latent growth curve models.
 
