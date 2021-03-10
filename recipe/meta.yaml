@@ -43,7 +43,7 @@ test:
 
 about:
   home: http://lavaan.org
-  license: GPL-2
+  license: GPL-2.0-or-later
   summary: Fit a variety of latent variable models, including confirmatory factor analysis, structural equation modeling and latent growth curve models.
   license_family: GPL2
   license_file:
