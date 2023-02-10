@@ -1,13 +1,15 @@
 About r-lavaan
 ==============
 
-Home: http://lavaan.org
+Home: https://lavaan.ugent.be
 
 Package license: GPL-2.0-or-later
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-lavaan-feedstock/blob/main/LICENSE.txt)
 
 Summary: Fit a variety of latent variable models, including confirmatory factor analysis, structural equation modeling and latent growth curve models.
+
+Development: https://github.com/yrosseel/lavaan
 
 Current build status
 ====================
