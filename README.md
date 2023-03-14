@@ -1,11 +1,11 @@
-About r-lavaan
-==============
+About r-lavaan-feedstock
+========================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-lavaan-feedstock/blob/main/LICENSE.txt)
 
 Home: https://lavaan.ugent.be
 
 Package license: GPL-2.0-or-later
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-lavaan-feedstock/blob/main/LICENSE.txt)
 
 Summary: Fit a variety of latent variable models, including confirmatory factor analysis, structural equation modeling and latent growth curve models.
 
