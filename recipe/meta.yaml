@@ -1,4 +1,4 @@
-{% set version = "0.6-20" %}
+{% set version = "0.6-21" %}
 {% set posix = 'm2-' if win else '' %}
 
 package:
@@ -9,7 +9,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/lavaan_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/lavaan/lavaan_{{ version }}.tar.gz
-  sha256: c3df7b2ceb5b0c23c685beaad112e8160c0466c48518b8a83974ca025dc1c1c6
+  sha256: f986d9a3c03c2d26262dfeccbb8d5604ce8d38787a8eb3af1b2d1f3d8571b54f
 
 build:
   number: 0
